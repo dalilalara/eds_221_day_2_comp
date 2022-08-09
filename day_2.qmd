@@ -6,3 +6,49 @@ execute:
   warning: false
   message: false
 ---
+
+# Vectors 
+```{r}
+# Creating a vector
+dogs <- c("teddy", "khora", "waffle", "banjo", "tallie")
+
+# Check the class
+class(dogs)
+```
+```{r}
+# Creating vector with different classes
+cat <- c("creamsicle wolf", 14.2, 3L)
+
+# Vector with different classes is a character bec. it's the most flexible
+class(cat)
+```
+```{r}
+# Using typeof() to further check class
+years <- c(20, 40, 16, 2)
+class(years)
+typeof(years)
+```
+
+```{r}
+# Want to do a conditional check
+# is. <<< asks question "is this THIS"
+# as. <<< gives command "make this THIS"
+
+#Asking if years numeric
+is.numeric(years)
+
+#Asking if years charecter
+is.character(years)
+```
+
+# Named vector of elements
+```{r}
+#note this continues to be a 1-D vector
+#almost giving a column name to this 
+dog_food <- c(teddy = "purina", khora = "alpo", waffle = "fancy feast")
+dog_food
+dog_food[2]
+
+#can also call things where its looking for that item in the vector
+dog_food["khora"]
+```
